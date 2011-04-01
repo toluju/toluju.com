@@ -1,0 +1,174 @@
+/* Author: Toby Jungen */
+
+body {
+  background-color: #ddd;
+  font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+#wrapper {
+  background-color: #fff;
+  width: 800px;
+  border: solid #000 1px;
+  margin: 7px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+}
+
+article {
+  padding: 10px;
+  font-size: 10pt;
+}
+
+article a:link {
+  color: #136;
+}
+
+article a:visited {
+  color: #136;
+}
+
+article a:hover {
+  color: #842;
+}
+
+article p {
+  margin: 1em 0;
+}
+
+article ul {
+  list-style: disc;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+footer {
+  font-size: 8pt;
+  color: #444;
+  border-top: solid #000 1px;
+  padding: 5px 10px 5px 10px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+#wrapper > header h1 {
+  background-color: #369;
+  color: #ddd;
+  font-size: 25pt;
+  font-weight: bold;
+  padding: 10px;
+  font-family: Avant Garde, Avant Gard Gothic, Century Gothic, URW Gothic L, Helvetica, sans-serif;
+  text-shadow: #777 1px 1px 1px;
+}
+
+#wrapper > header h1 span {
+  color: #fff;
+}
+
+#wrapper > header nav {
+  position: relative;
+  display: block;
+  height: 32px;
+}
+
+#wrapper > header nav ul {
+  border-top: solid #000 1px;
+  border-bottom: solid #000 1px;
+  background-color: #555;
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: small;
+}
+
+#wrapper > header nav li {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper > header nav a {
+  color: #fff;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+#wrapper > header nav a:hover {
+  background: #234;
+  color: #fff;
+}
+
+h1.pagetitle {
+  padding-bottom: 4px;
+  margin-top: 3px;
+  border-bottom: 3px solid #aaa;
+  font-size: 18pt;
+  font-weight: bold;
+}
+
+h1.pagetitle a {
+  text-decoration: none;
+}
+
+article.post {
+  margin-bottom: 10px;
+}
+
+article.post header .date {
+  font-size: smaller;
+}
+
+article.post h2 {
+  font-weight: bold;
+}
+
+article.post ul {
+  margin-left: 30px;
+}
+
+article.archives ul {
+  margin-top: 20px;
+}
+
+article.archives ul span {
+  width: 120px;
+  display: block;
+  float: left;
+  text-align: right;
+  margin-right: 5px;
+}
+
+article.postlist > article {
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+article.postlist .commentlink {
+}
+
+article #imagelist {
+  margin: 15px auto 25px;
+  border: solid 1px #ddd;
+  padding: 10px;
+  width: 690px;
+  text-align: center;
+}
+
+article #imagelist img {
+  padding: 3px;
+  margin: 2px;
+  border: solid 1px #fff;
+}
+
+article #imagelist img:hover {
+  border: solid 1px #ddd;
+}
+
+.clear {
+  clear: both;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{%if page.title %}{{ page.title }} - {% endif %}Toluju - Toby Jungen</title>
+  <meta charset="utf-8"/>
+  <meta name="generator" content="Jekyll"/> 
+  <meta name="author" content="Toby Jungen"/>
+  <link rel="openid2.provider" href="https://www.google.com/accounts/o8/id"/> 
+  <link rel="openid.server" href="https://www.google.com/accounts/o8/id"/> 
+  <link rel="openid2.local_id" href="https://www.google.com/accounts/o8/id"/> 
+  <link rel="openid.delegate" href="https://www.google.com/accounts/o8/id"/> 
+  <link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Atom"/> 
+  <link rel="stylesheet" href="/reset.css" type="text/css" media="screen"/> 
+  <link rel="stylesheet" href="/styles.css" type="text/css" media="screen"/> 
+  <link rel="stylesheet" href="http://disqus.com/stylesheets/toluju/disqus.css?v=2.0" type="text/css" media="screen"/> 
+  <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js'></script> 
+</head>
+<body>
+<div id="wrapper">
+
+<header>
+  <h1><span>To</span>by <span>Ju</span>ngen</h1>
+  <nav> 
+    <ul> 
+      <li><a href="/" title="About">About</a></li> 
+      <li><a href="/vitae/" title="Vitae">Vitae</a></li> 
+      <li><a href="/blog/" title="Blog">Blog</a></li> 
+      <li><a href="/archives/" title="Archives">Archives</a></li> 
+      <li><a href="/photos/" title="Photos">Photos</a></li> 
+      <li><a href="/social/" title="Social">Social</a></li> 
+    </ul> 
+  </nav> 
+</header>
+
+{{ content }}
+
+<footer>
+  Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a>. Theme designed by myself.
+</footer>
+
+</div>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-4608793-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</body>
+</html>
