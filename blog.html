@@ -14,7 +14,7 @@ title: Blog
 
     {{ post.content }}
 
-    <a class="commentlink" href="{{ post.url }}#disqus_thread" posturl="http://www.toluju.com{{ post.url }}">Comments</a>
+    <a class="commentlink" href="{{ post.url }}#disqus_thread" posturl="{{ post.url }}">Comments</a>
 
     </article>
   {% endfor %}
@@ -27,7 +27,7 @@ title: Blog
 
   $("a.commentlink").each(function(i) {
     var link = $(this);
-    $.getJSON(apiUrl + "&api_key=" + apiKey + "&thread:link=" + escape(link.attr("posturl")) + "&callback=?", function(data) {
+    $.getJSON(apiUrl + "&api_key=" + apiKey + "&thread:link=" + escape("http://www.toluju.com" + link.attr("posturl")) + "&callback=?", function(data) {
       if (data.response) {
         var count = data.response.posts || "0";
         link.text(count + " " + ((count === 1) ? "Comment" : "Comments"));

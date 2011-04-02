@@ -133,6 +133,7 @@ article.post ul {
 
 article.archives ul {
   margin-top: 20px;
+  list-style: none;
 }
 
 article.archives ul span {
