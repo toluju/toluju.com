@@ -14,25 +14,11 @@ title: Blog
 
     {{ post.content }}
 
-    <a class="commentlink" href="{{ post.url }}#disqus_thread" posturl="{{ post.url }}">Comments</a>
+    <a class="commentlink" href="http://www.toluju.com{{ post.url }}#disqus_thread">Comments</a>
 
     </article>
   {% endfor %}
 </article>
 
-<script type="text/javascript">
- $(function() {
-  var apiUrl = "http://disqus.com/api/3.0/threads/details.jsonp?forum=toluju"
-  var apiKey = "Ail0erVQ79DN1piu1X8Wn1Qzsq7pea5sQplwE9NpVTSdDV70QF0E5SokneyfOwYO"
-
-  $("a.commentlink").each(function(i) {
-    var link = $(this);
-    $.getJSON(apiUrl + "&api_key=" + apiKey + "&thread:link=" + escape("http://www.toluju.com" + link.attr("posturl")) + "&callback=?", function(data) {
-      if (data.response) {
-        var count = data.response.posts || "0";
-        link.text(count + " " + ((count === 1) ? "Comment" : "Comments"));
-      }
-    });
-  });
- });
-</script>
+<script type="text/javascript"> var disqus_shortname = "toluju"; </script>
+<script type="text/javascript" src="http://toluju.disqus.com/count.js">
